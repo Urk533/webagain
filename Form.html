@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Dacebook</title>
+		<link rel="stylesheet" type="text/css" href="#">
+	</head>
+
+    <body>
+    	
+    	<section class="main-form">
+    		<h1 id = "id-form">Form Test</h1>
+    	
+    	<!--Form starts from here-->
+    	<form action="./urk.html" method = "POST">
+    		<h1>Dacebook Inc.</h1><br>
+    		<p>Please login to our website and enjoy every moment.</p>
+    		
+    		<!--Textfield for firstname-->
+    		<section class = "namef">
+    		    <!--<label for = "Firstname">User Name:</label><br>-->
+    			<label for = "firstname"><strong>First name</strong></label><br>
+    			<input type = "text" id = "firstname" name = "Firstname" maxlength="12" minlength="7" pattern="[a-zA-Z0-9]+" required>
+    		</section>
+            <hr>
+
+            <!--Textfield  for lastname--> 
+    		<section class = "namel">
+    			<label for="lastname"><strong>Last name:</strong></label>
+    			<br>
+                <input type = "text" id = "lastname" name = "Lastname" maxlength="10" minlength="4"pattern = "[a-zA-Z0-9]+" required>
+    		</section>
+    		<hr>
+            
+            <!--Textfield  for password-->
+    		<section class = "namep">
+    			<label for="pass"><strong>Password:</strong></label>
+    			<br>
+                <input type = "password" id = "pass" name = "Password" maxlength="10" minlength="4"pattern = "[a-zA-Z0-9]+" required>
+    		</section>
+    		<hr>
+            
+            <!--Textfield  for age(number type)-->
+    		<section class = "age-mfo">
+    			<label for = "agee"><strong>Age:</strong></label>
+    			<br>
+    			<input type = "number" id = "agee" name = "age">
+    		</section>
+    		<hr>
+
+    		<!--Range demo -->
+    		<section class = "range-wala">
+    			<label for = "satis"><strong>How much do you like our page:-</strong></label>
+    			<br>
+    			<span>Bad</span>
+
+
+
+
+
+    			<input type = "range" id = "satis" name = "satisfaction" min = "0" max = "12" step = "1">
+
+
+
+
+
+
+    			<span>Excellent</span>
+    		</section>
+    		<hr>
+
+    		<!--Checkbox demo-->
+    		<section class = "chbox">
+    			<p><strong>Which apps do you use most:-</strong></p>
+                <label><strong>Jutube</strong></label>
+                <input type = "checkbox" name = "app"> 
+                <br>
+                <label><strong>Ichat</strong></label>
+                <input type = "checkbox" name = "app">
+                <br>
+                <label><strong>Cyber</strong></label>
+                <input type = "checkbox" name = "app" value = "cyber">
+            </section>
+            <hr>
+
+            <!--Radiobutton demo-->
+            <section class = "radbtn">
+            	<input type = "radio" name = "gender" value = "male"> Male
+            	<br>
+            	<input type = "radio" name = "gender" value = "female"> Female
+            	<br>
+            	<input type = "radio" name = "gender" value = "others"> Others
+            </section>
+            <hr>
+
+            <!--Option Demo-->
+            <section>
+             <!-- <label><strong>What is my age:</strong></label><br>-->
+              <strong>What is my age:</strong>
+              <br><select id = "yage" name = "yage">
+            	<option value = "20">Twenty</option>
+            	<option value = "30">Thirty</option>
+            	<option value = "40">Forty</option>
+            	<option value = "50">Fifty</option>
+              </select>
+            </section>
+
+
+        </form>
+    	
+    	</section>
+   
+    </body>
+</html>
